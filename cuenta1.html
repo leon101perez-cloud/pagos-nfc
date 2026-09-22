@@ -22,7 +22,20 @@
             text-align: center;
             width: 280px;
         }
-        h2 { color: #333; margin-top: 0; }
+        .nombre-negocio {
+            color: #1a1a1a;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        h2 { 
+            color: #555; 
+            font-size: 16px;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 20px; 
+        }
         .banco { color: #666; font-size: 18px; margin-bottom: 10px; }
         .clabe { 
             font-size: 22px; 
@@ -48,12 +61,16 @@
 <body>
 
     <div class="contenedor">
+        <!-- AQUÍ CAMBIAS EL NOMBRE DE TU NEGOCIO -->
+        <div class="nombre-negocio">Gorditas Doña lulis</div>
+
         <h2>Transferencia</h2>
+        
         <!-- AQUÍ CAMBIAS EL NOMBRE DEL BANCO -->
-        <div class="banco">SANTANDER</div>
+        <div class="banco">Santander</div>
         
         <!-- AQUÍ CAMBIAS EL NÚMERO DE CUENTA O CLABE -->
-        <div class="clabe" id="cuenta">0335311355378</div>
+        <div class="clabe" id="cuenta">012345678912345678</div>
         
         <button onclick="copiarTexto()">Copiar Número</button>
         <div id="mensaje"></div>
